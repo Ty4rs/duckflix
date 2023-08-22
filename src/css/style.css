@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    padding: 1.4rem;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+
+}
+.navbar ul li{
+    margin: 0rem 1rem;
+}
