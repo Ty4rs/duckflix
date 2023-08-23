@@ -1,18 +1,53 @@
 *{
     margin: 0;
+    
 }
+
+@font-face {
+    font-family: 'openSansL';
+    src: url('../../public/font/OpenSans_SemiCondensed-Light.ttf') format('truetype');
+    /* Adicione outras declarações de formato aqui, se necessário */
+  }
 
 .navbar{
     display: flex;
-    background-color: red;
+    background-color: rgb(14, 14, 14);
     justify-content: space-between;
     padding: 1.4rem;
+
+    font: sans-serif;
 }
 .navbar ul{
     display: flex;
     list-style: none;
 
 }
+.navbar ul li:first-child{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.navbar ul li:first-child::before{
+    content: "";
+    display: block;
+    background-color: rgb(255, 208, 0);
+    background-image: linear-gradient(to right, rgb(255, 208, 0), rgb(241, 158, 4));
+    width: 100%;
+    height: 0.3rem;
+    position: absolute;
+    top: 1.4rem;
+    border-radius: 10px;
+    
+}
 .navbar ul li{
     margin: 0rem 1rem;
+    font-family: 'openSansL';
+    font-weight: 600;
+    color: rgb(167, 167, 167);
+}
+.navbar a{
+    text-decoration: none;
+
 }
